@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+/* Navbar style */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    user-select: none;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    cursor: pointer;
+    
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: rgb(58, 56, 56);
+
+    &:hover {
+        text-decoration: underline;
+        color: black;
+    }
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+/* Aside Navbar style */
+
+.side-navbar {
+    background-color: rgb(5, 5, 37);
+    width: 50%;
+    height: 100%;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: -50%; 
+    z-index: 2;
+    padding: 20px;
+    transition: 1s linear;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.side-bar-link {
+    margin-bottom: 30px;
+
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color: #ccc;
+        text-decoration: underline;
+    }
+}
+
+/* Header style */
+
+.header {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-top: 50px;
+    
+}
+
+.header button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 9px 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-left: 61px;
+
+    &:hover {
+        background-color: rgb(150, 143, 143);
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+
+/* Service style */
+
+.service {
+    padding: 20px;
+}
+
+/* service-container-1 style */
+.service-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* service-container-2 style */
+.service-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.service-container-2 div {
+    background-color: #f2f7f4;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Arrival style */
+.arrival {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+
+
+.arrival-container {
+    position: relative;
+    flex-basis: 20%;
+}
+
+.arrival-container button {
+    position: absolute;
+    padding: 5% 10%;
+    left: 14%;
+    top: 50%;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+/* News style */
+
+.news {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+    /* center panna two method irukum */
+
+    text-align: center;
+    padding: 20px;
+}
+
+.search {
+    width: 80%;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 10px;
+
+}
+
+.news button {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+/* Footer style */
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.footer-container i {
+    padding-right: 5px;
+}
+
+/* Collection Section Page Style */
+
+/* Products Style */
+
+.products-section {
+    margin-top: 20px;
+}
+
+.product-search {
+    width: 80%;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.product-search input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+
+    &:focus {
+        outline: none;
+        color: orange;
+    }
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.fashion-box {
+    text-align: center;
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+
+.fashion-box img {
+    border-radius: 20px;
+    /* border: 1px solid black; */
+
+    &:hover {
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+}
+
+/* Contact Section Page Style  */
+
+/* Contact style */
+
+.contact-section{
+    width: 60%;
+    background-color: black;
+    margin: 10px auto;
+    border-radius: 10px;
+   
+}
+.contact-container{
+    padding: 50px;
+    color: #f2f7f4;
+   
+}
+
+.form-section input{
+
+    width: 100%;
+    height: 56px;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+ 
+}
+label,input,textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-section textarea{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    font-size: 20px;
+
+    &:focus{
+        outline: none;
+    }
+}
+.form-section button{
+    padding: 10px;
+    background: blue;
+    border: none;
+    color: #ffff;
+    font-weight: bold;
+    border-radius: 5px;
+    &:hover{
+        background-color:rgb(110, 110, 187);
+    }
+
+}
+
+
+
+/* Media Query */
+
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .service-container-1 {
+        display: none;
+    }
+
+    .service-container-2 {
+        flex-direction: column;
+    }
+
+
+}
